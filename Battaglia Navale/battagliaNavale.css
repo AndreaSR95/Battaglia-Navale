@@ -1,0 +1,72 @@
+#pagina{
+	text-align: center;
+}
+
+.divTabella{
+	border: 2px solid red;
+	float: left;
+	margin-left: 10%;
+}
+
+.divTabellaB{
+	border: 2px solid blue;
+	float: right;
+	margin-right: 10%;
+}
+
+.sceltaPos{
+//	border: 2px solid blue;
+	text-align: center;
+	margin-right: 10%;
+}
+
+#passaTurno{
+	display: none;
+}
+
+body{
+	//color: #28a428;
+	text-align: center;
+/*	background-image: url("img/background.png");
+	background-size: cover;*/
+}
+
+h1,h2{
+	//color: white;
+	text-align: center;
+}
+
+table, th{
+	background-color: black;
+	color: #28a428;
+	border: 1px solid #28a428;
+	border-collapse: collapse;
+}
+
+td{
+	color: #28a428;
+	border: 1px solid #28a428;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+}
+
+#attack{
+	//height: 40px;
+	//width: 120px;
+	//background-image: url("img/bomb.png");
+	//background-size: cover;
+	//background-repeat: no-repeat;
+	//border: 1px solid #28a428;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+p{
+	//text-shadow: 2px 2px 2px green;
+}
+
+.pedinaDa4, .pedinaDa3, .inputPulsanti{
+	display: none;
+}

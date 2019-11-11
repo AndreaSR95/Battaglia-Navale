@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="battagliaNavale.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="pagina">
+<h1>Battaglia Navale</h1>
+
+
+
+
+
+  <div id="giocatore1">
+    <div class="divTabella">
+     <table>
+      <tbody id="tabella1">
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </tbody>
+      </table>
+    </div>
+    
+    <div class="divTabellaB">
+      <table>
+      <tbody id="tabella1B">
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="sceltaPos">
+      <h2>Giocatore 1</h2>
+
+      <p style="display:none" class="pedinaDa4" id="scelta4_g1">Corazzate da inserire: <span id="num_g1_4"> 0 </span> 
+        <input id="input_g1_4" type="text">
+        <input id="input_g1_4B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('4')">
+      </p>
+      <p style="display:none" class="pedinaDa3" id="scelta3_g1">Sottomarino da inserire: <span id="num_g1_3"> 0 </span> 
+        <input id="input_g1_3" type="text"> 
+        <input id="input_g1_3B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('3')">
+      </p>
+      <p id="scelta2_g1">Cacciatorpediniere da inserire: <span id="num_g1_2"> 1 </span> 
+        <input id="input_g1_2" type="text"> 
+        <input id="input_g1_2B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('2')">
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="giocatore2" style="display:none">
+    <div class="divTabella">  
+     <table>
+      <tbody id="tabella2">
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="divTabellaB">
+      <table>
+      <tbody id="tabella2B">
+        <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="sceltaPos">
+      <h2>Giocatore 2</h2>
+      <p style="display:none" class="pedinaDa4" id="scelta4_g2">Corazzate da inserire: <span id="num_g2_4"> 0 </span> 
+        <input id="input_g2_4" type="text"> 
+        <input id="input_g2_4B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('4')">
+      </p>
+      <p style="display:none" class="pedinaDa3" id="scelta3_g2">Sottomarino da inserire: <span id="num_g2_3"> 0 </span> 
+        <input id="input_g2_3" type="text"> 
+        <input id="input_g2_3B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('3')">
+      </p>
+      <p id="scelta2_g2">Cacciatorpediniere da inserire: <span id="num_g2_2"> 1 </span> 
+        <input id="input_g2_2" type="text"> 
+        <input id="input_g2_2B" class="inputPulsanti" type="submit" value="Inserire posizione iniziale e finale" onclick="inserimento('2')">
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div id="attack" style="display:none">
+    <h2>Colpi:</h2>
+    <img if="bomb" src="img/bomb.png" draggable="true" width="40" height="40">
+  </div>
+  <p id="risultato"></p>
+  <input id="passaTurno" type="submit" value="passa il turno" onclick="passo()" style="display:none">
+</div>
+
+
+<script src="battagliaNavale.js"></script>
+
+</body>
+</html>
